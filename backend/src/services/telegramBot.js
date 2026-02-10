@@ -8,7 +8,8 @@ bot.use(session());
 /** * IMPORTANT: Use the URL that works in your browser. 
  * If you moved scan.html to the root, remove "/public" from this link.
  */
-const SCANNER_URL = 'https://libawit.github.io/HRMS-Backend/scan.html';
+// This is now your root URL
+const SCANNER_URL = 'https://libawit.github.io/HRMS-Backend/';
 
 async function executePunch(ctx, userId, stationId) {
     const req = { user: { id: userId }, body: { stationId: stationId } };
